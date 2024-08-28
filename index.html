@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelGuide website </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+   <header>
+    <nav class="navbar">
+
+        <div class="logo-container">
+            <i class="fas fa-map-marked-alt logo "></i>
+            <a href="#" class="website-name">TravelGuide</a>
+        </div>
+
+
+
+        <div class="nav-links">
+            <a href="./index.html" class="nav-link">Home</a>
+            <a href="./about.html" class="nav-link">About Us</a>
+            <a href="./Contact.html" class="nav-link">Contact Us</a>
+        </div>
+
+
+        <div class="search-container">
+            <input type="text" placeholder="Enter a destination or keyword" class="search-input" id="searchInput">
+            <button class="btn btn1 " onclick="fetchData()" ><i class="fas fa-search"></i> Search</button>
+            <button class="btn btn2" onclick="resetSearch()"><i class="fas fa-times"></i> Clear</button>
+        </div>
+
+    </nav>
+
+   </header>
+<!-- ------------------------home section------------------ -->
+   <main  >
+    <article class="homepage-container" id="Home">
+    <section class="background-image"></section>
+    <section class="content-container" >
+       <section  >
+        <div class="social-icons">
+            <a href="#" class="social-icon fac-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+       </section>
+       <section class="content">
+        <div class="content-item">
+            <h1>EXPLORE DRAME DESTINATION</h1>
+            <p class="home-p">This is a place where you can find and book amazing travel experiences.</p>
+            <button class="book-now-button">Book Now</button>
+        </div>
+       </section>
+   
+    <section>
+        <div id="displayData" class="search-section">
+ 
+
+        </div>
+    </section>
+    </section>
+
+</article>
+</main>
+
+   <footer></footer>
+   <script src="./travel_recommendation.js"></script>
+</body>
+</html>

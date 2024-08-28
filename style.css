@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    font-family: "Kanit", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+img{
+    height: 100%; 
+    width: 100%;
+    object-fit: cover;
+    }
+
+
+
+header {
+    background-image: linear-gradient(to right,black  , #3E5151, #748f8f);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+}
+ 
+ .logo-container {
+    display: flex;
+    align-items: center;
+} 
+
+.logo {
+    font-size: 26px;
+    margin-right: 10px;
+    transform: rotate(-60deg);
+}
+
+.website-name {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/* Style for the navigation links */
+.nav-links {
+    display: flex;
+}
+
+.nav-link {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color:  #7a1a1a;
+}
+
+/* Style for the search bar and buttons */
+.search-container {
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+    /* display: inline-block; */
+}
+
+.search-input {
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    border-style: none;
+    font-family: "Kanit", sans-serif;
+    padding: 10px;
+    margin-right: 10px;
+    outline: none;
+    color: #3E5151;
+}
+.search-input::placeholder {
+    opacity: 0.7; /* Optional: Adjust opacity if needed */
+}
+
+
+.btn {
+    padding: 5px 10px;
+    background-color: #242323;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    width: 80px;
+    height: 35px;
+    margin-right: 10px;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+
+}
+/* .btn1{
+    right: 90px;
+
+}
+.btn2{
+    right: 20px;
+} */
+
+.btn:hover {
+    background-color: #531818;
+}
+
+/* ---------------------------home page ---------------------------- */
+.homepage-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    background-image: url('https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2017/04/04/1331852401685_1/jc-pieri-alla-cascata-godafoss-islanda');
+    background-size: cover;
+    background-position: center ;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+
+
+.content-container{
+    
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* background-color: #3E5151; */
+    
+    
+}
+
+.content {
+    /* position: relative; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* height: 100%; */
+    /* background-color: #7B679F; */
+    margin-top: 100px;
+}
+
+
+.social-icons::before{
+    content: "";
+    display: block;
+    width: 1.5px;
+    height: 160px; /* Adjust as needed */
+    background-color: #2e2e2e; /* Line color */
+    margin-left: 10px; 
+} 
+.social-icons {
+    /* position: absolute;
+    left: 20px;
+    top: 40%;
+    transform: translateY(-50%); */
+    margin-top: 100px;
+margin-left: 20px;
+}
+.fac-icon{
+    margin-top: 80px;
+
+}
+.social-icon {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #2e2e2e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #3E5151;
+}
+.content-item{
+    position: absolute;
+    left: 150px;
+}
+
+h1 {
+    width: 350px;
+    font-size: 3em;
+    letter-spacing: 2px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    color: #2e2e2e;
+    /* background-color: #3E5151; */
+}
+
+.home-p {
+    width: 250px;
+    font-size: 1em;
+    margin-bottom: 30px;
+    max-width: 600px;
+    color: #2e2e2e;
+    font-weight: 400;
+}
+
+.book-now-button {
+    padding: 10px 45px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    background-color: #333132;
+    color: #b8b5b5;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-now-button:hover {
+    background-color: #5c5410;
+}
+
+/* -----------------------search---------------- */
+
+.search-section{
+    /* background-color: #3E5151; */
+    
+}
+
+#displayData {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 20px;
+}
+
+.card {
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+/* ----------------------------about --------------------------- */
+.about-p-container{
+    background-color: rgba(0, 0, 0, 0.4);
+    /* flex: 1; */
+
+}
+
+
+.about-p{
+    width: 1100px;
+    color: #f1efef;
+    font-weight: 200;
+    padding: 10px;
+    font-size: 15px;
+    
+}
+
+.team-section{
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.team-header{
+    width: 150px;
+    padding: 10px;
+    font-size: 2.5em;
+    /* background-color: #ec9fa9; */
+    margin-right:150px;
+}
+.team-cards {
+    /* flex: 2; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.team-card {
+    width: 200px;
+    height: 150px;
+    border: none;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 50px;
+}
+
+.team-card i {
+
+    margin-bottom: 15px;
+    color: #680613; /* Icon color */
+    font-size: 20px;
+    background-color: #3E5151;
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+.team-card h3 {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #c7c7c7;
+}
+
+.team-card p {
+    font-style: italic;
+    color: #f1f1f1;
+    font-weight: 200;
+    font-size: .8em;
+    background-color: #3E5151;
+    width: 150px;
+    height: 28px;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 4px;
+    border: .5px solid #fff ;
+
+
+}
+
+/* ----------------------------contact us ------------------------- */
+.contact-container {
+    position: absolute;
+    left: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    margin: -100px 80px;
+    /* background-color: #3E5151; */
+    min-width: 1000px;
+    
+}
+
+.contact-details,
+.contact-form {
+    flex: 1;
+}
+
+.contact-details h2 {
+    margin-bottom: 10px;
+    color: #2e2e2e;
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+.contact-details p{
+ color: #2e2e2e;
+ font-weight: 200;
+ font-size: 14px;
+}
+.contact-form{
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 5px;
+
+}
+.form-group {
+    margin-bottom: 20px;
+    color: #c9c8c8;
+    font-weight: 200;
+    
+}
+
+.form-group input ,
+.form-group textarea{
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: .2px solid rgba(255, 255, 255, 0.7) ;
+}
+
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+    color: #2e2e2e;
+    opacity: .5;
+    font-weight: 100;
+    font-style: italic;
+    /* letter-spacing: 2px; */
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+#form-group-btn {
+    padding: 5px 20px;
+    background-color: #550f18;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#form-group-btn:hover {
+    background-color: #3e3e3f;
+}
